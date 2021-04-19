@@ -5,7 +5,6 @@ import ErrorBoundary from './components/ErrorBoundary';
 import ImageLoader from './shared/Loader/Loader';
 
 const App = () => (
-  <>
     <ErrorBoundary>
       <Suspense fallback={<ImageLoader />}>
         {routes.map(route => {
@@ -14,7 +13,6 @@ const App = () => (
         <Redirect to="/" />
       </Suspense>
     </ErrorBoundary>
-  </>
 );
 
 export default App;
